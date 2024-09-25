@@ -158,3 +158,19 @@ h1 {
     padding: 0;
   }
 }
+
+@media screen and (max-width: 430px) {
+  /* Titre principal */
+  .container {
+    font-size: 30px;
+  }
+  .filter-btn {
+    font-size: 23px;
+  }
+  .edit-btn {
+    font-size: 16px;
+  }
+  .delete-btn {
+    font-size: 16px;
+  }
+}
