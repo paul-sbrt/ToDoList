@@ -1,0 +1,160 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f7f7;
+}
+
+/* Titre principal */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Conteneur de filtrage */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.filter-btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Conteneur de l'entrée et du bouton */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Champ de saisie */
+#task-input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Bouton d'ajout */
+#add-task-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Conteneur des messages */
+#message-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 4px;
+  max-width: 500px;
+  margin: 0 auto 10px;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Liste des tâches */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Élément de tâche */
+.task-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Animation de disparition */
+.task-item.removing {
+  animation: fadeOut 0.5s forwards;
+}
+
+/* Texte de la tâche */
+.task-text {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+/* Tâche terminée */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Bouton de suppression */
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* Bouton d'édition */
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Champ de saisie en ligne pour l'édition */
+.edit-input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animation de disparition */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

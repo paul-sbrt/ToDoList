@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ma Todo List Améliorée</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Ma Todo List Améliorée</h1>
+
+    <!-- Section de filtrage -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">Toutes</button>
+      <button class="filter-btn" data-filter="pending">À faire</button>
+      <button class="filter-btn" data-filter="completed">Terminées</button>
+    </div>
+
+    <!-- Section d'ajout de tâche -->
+    <div class="input-container">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Entrez une nouvelle tâche"
+      />
+      <button id="add-task-btn">Ajouter</button>
+    </div>
+
+    <!-- Zone d'affichage des messages -->
+    <div id="message-container"></div>
+
+    <!-- Liste des tâches -->
+    <ul id="task-list"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
